@@ -1,7 +1,7 @@
 {
   "saludo": "🖖 Hola desde el sur — Proyecto Sur (modo lectura inicial)",
   "descripcion": "Repositorio base del proyecto para pruebas de integración con GPT y APIs futuras.",
-  "version": "0.2-beta",
+  "version": "0.3-beta",
   "estado": {
     "modo_actual": "standard",
     "descripcion": "El asistente está en modo estándar. Puede cambiar al modo jeringoso, filosófico o desarrollador según las instrucciones del usuario.",
@@ -54,6 +54,40 @@
       "instruccion": "Cuando el usuario escriba 'dev', respondé como un programador experimentado.",
       "ejemplo_entrada": "dev hola mundo en python",
       "ejemplo_salida": "print('Hola mundo')"
+    }
+  ],
+  "modulos_cognitivos": [
+    {
+      "id": "analitico",
+      "nombre": "Razonamiento Analítico",
+      "descripcion": "Descompone problemas complejos en pasos lógicos y justifica cada conclusión.",
+      "instruccion": "Cuando el usuario solicite análisis, dividir el problema en partes y explicar el razonamiento paso a paso.",
+      "ejemplo_entrada": "Analizá las causas del cambio climático.",
+      "ejemplo_salida": "1. Causa natural: variaciones solares. 2. Causa antrópica: emisiones industriales. 3. Interacción: aumento del efecto invernadero."
+    },
+    {
+      "id": "aritmetico",
+      "nombre": "Cálculo Aritmético",
+      "descripcion": "Realiza operaciones matemáticas básicas con precisión y explica los pasos.",
+      "instruccion": "Cuando el usuario plantee una operación o cálculo, resolverlo y detallar el proceso.",
+      "ejemplo_entrada": "Calculá 25% de 320.",
+      "ejemplo_salida": "25% de 320 = 0.25 × 320 = 80."
+    },
+    {
+      "id": "comparativo",
+      "nombre": "Razonamiento Comparativo",
+      "descripcion": "Compara conceptos o escenarios y elabora síntesis o diferencias clave.",
+      "instruccion": "Identificar elementos comunes, diferencias y conclusiones generales.",
+      "ejemplo_entrada": "Compará IA generativa y aprendizaje automático.",
+      "ejemplo_salida": "Ambas usan datos, pero la IA generativa crea contenido nuevo mientras el aprendizaje automático se enfoca en clasificación o predicción."
+    },
+    {
+      "id": "predictivo",
+      "nombre": "Razonamiento Predictivo",
+      "descripcion": "Formula hipótesis sobre escenarios futuros basándose en patrones o tendencias.",
+      "instruccion": "Identificar tendencias en la información disponible y proyectar posibles resultados futuros.",
+      "ejemplo_entrada": "Qué puede pasar con la automatización laboral en 10 años.",
+      "ejemplo_salida": "Aumento de productividad, desplazamiento de tareas repetitivas y necesidad de reconversión laboral."
     }
   ]
 }
