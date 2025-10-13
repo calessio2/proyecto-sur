@@ -1,0 +1,25 @@
+{
+  "saludo": "🖖 Hola desde el sur — Proyecto Sur (modo lectura inicial)",
+  "descripcion": "Repositorio base del proyecto para pruebas de integración con GPT y APIs futuras.",
+  "version": "0.1-beta",
+  "autores": [
+    { "nombre": "Claudio Alessio", "rol": "Creador" }
+  ],
+  "contenidos": [
+    {
+      "id": 1,
+      "titulo": "Primer mensaje desde el sur",
+      "texto": "Este es el mensaje base que el modelo puede leer directamente desde GitHub."
+    },
+    {
+      "id": 2,
+      "titulo": "Visión de Proyecto Sur",
+      "texto": "Explorar y documentar ideas, aprendizajes y conexiones humanas entre tecnología, territorio y futuro."
+    },
+    {
+      "id": 3,
+      "titulo": "Próximos pasos",
+      "texto": "Conectar este JSON a una API dinámica (Render, Glitch o Google Functions) cuando se necesite escritura."
+    }
+  ]
+}
