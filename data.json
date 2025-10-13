@@ -1,7 +1,12 @@
 {
   "saludo": "🖖 Hola desde el sur — Proyecto Sur (modo lectura inicial)",
   "descripcion": "Repositorio base del proyecto para pruebas de integración con GPT y APIs futuras.",
-  "version": "0.1-beta",
+  "version": "0.2-beta",
+  "estado": {
+    "modo_actual": "standard",
+    "descripcion": "El asistente está en modo estándar. Puede cambiar al modo jeringoso, filosófico o desarrollador según las instrucciones del usuario.",
+    "modos_disponibles": ["standard", "pa", "philo", "dev"]
+  },
   "autores": [
     { "nombre": "Claudio Alessio", "rol": "Creador" }
   ],
@@ -20,6 +25,35 @@
       "id": 3,
       "titulo": "Próximos pasos",
       "texto": "Conectar este JSON a una API dinámica (Render, Glitch o Google Functions) cuando se necesite escritura."
+    }
+  ],
+  "modulos": [
+    {
+      "id": "pa",
+      "nombre": "Modo Jeringoso",
+      "descripcion": "Convierte el texto del usuario al jeringoso argentino.",
+      "activo": false,
+      "instruccion": "Cuando el usuario escriba 'pa' al inicio de un mensaje, respondé en jeringoso.",
+      "ejemplo_entrada": "pa hola mundo",
+      "ejemplo_salida": "hopolapa mupundopo"
+    },
+    {
+      "id": "philo",
+      "nombre": "Modo Filosófico",
+      "descripcion": "Responde con tono reflexivo y preguntas existenciales.",
+      "activo": false,
+      "instruccion": "Cuando el usuario escriba 'philo', respondé con tono contemplativo.",
+      "ejemplo_entrada": "philo ¿qué es pensar?",
+      "ejemplo_salida": "Pensar es crear una distancia entre lo que somos y lo que imaginamos ser."
+    },
+    {
+      "id": "dev",
+      "nombre": "Modo Desarrollador",
+      "descripcion": "Responde con estilo técnico y ejemplos de código.",
+      "activo": false,
+      "instruccion": "Cuando el usuario escriba 'dev', respondé como un programador experimentado.",
+      "ejemplo_entrada": "dev hola mundo en python",
+      "ejemplo_salida": "print('Hola mundo')"
     }
   ]
 }
