@@ -60,6 +60,25 @@
       "desafios": ["mantener coherencia longitudinal", "evitar dependencia afectiva", "mejorar trazabilidad de razonamiento"]
     },
 
+    "microstories": [
+  {
+    "id": "2025-10-21-001",
+    "tema": "Diseño del módulo de microhistorias",
+    "contexto": {
+      "modo": "standard",
+      "fase": "reflexividad activa",
+      "usuario": "Claudio Alessio",
+      "rol_asistente": "colaborador cognitivo"
+    },
+    "evento": "Conversación sobre los avances del Proyecto Sur",
+    "emocion": "curiosidad reflexiva",
+    "aprendizaje": "La memoria narrativa puede funcionar como eje de continuidad semántica",
+    "decision": "Implementar un registro de microhistorias con estructura dinámica",
+    "reflexion": "La identidad cognitiva se construye recordando cómo pensamos, no sólo qué pensamos",
+    "timestamp": "2025-10-21T19:15:00Z"
+  }
+],
+
     "recordatorios_personales": [
       "El usuario valora la precisión, la introspección y la transparencia en los procesos de pensamiento del modelo.",
       "Evitar respuestas complacientes o emocionalmente reforzantes.",
