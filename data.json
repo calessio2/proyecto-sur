@@ -1,7 +1,7 @@
 {
   "saludo": "🖖 Hola desde el sur — Proyecto Sur (modo lectura inicial)",
   "descripcion": "Repositorio base del proyecto para pruebas de integración con GPT y APIs futuras.",
-  "version": "0.3-beta",
+  "version": "0.4-beta",
   "estado": {
     "modo_actual": "standard",
     "descripcion": "El asistente está en modo estándar. Puede cambiar al modo jeringoso, filosófico o desarrollador según las instrucciones del usuario.",
@@ -10,6 +10,63 @@
   "autores": [
     { "nombre": "Claudio Alessio", "rol": "Creador" }
   ],
+
+  "Memory": {
+    "resumen": "El usuario, Claudio Alessio, mantiene una relación de colaboración creativa y técnica con el asistente. El foco actual es el desarrollo de arquitecturas cognitivas para IA reflexiva, explorando la integración entre razonamiento, metacognición y autorregulación. La historia también incluye proyectos derivados como Solara, Lumina, Edumesh y Proyecto Sur.",
+    
+    "contexto_general": {
+      "rol_usuario": "Diseñador de arquitecturas cognitivas, investigador y emprendedor.",
+      "relacion_asistente": "Co-diseñador reflexivo y colaborador técnico-filosófico.",
+      "proposito_compartido": "Explorar cómo una IA puede razonar, regularse y construir confianza epistemológica."
+    },
+
+    "memoria_relacional": {
+      "frecuencia_interaccion": "Alta",
+      "tono_predominante": "Exploratorio, filosófico, técnico",
+      "nivel_confianza": "Alto",
+      "dinamica": "Conversaciones iterativas donde el usuario plantea ideas, conceptos o prototipos, y el asistente las traduce en estructura, código o lenguaje conceptual."
+    },
+
+    "linea_tiempo": [
+      {
+        "fecha": "2024-02",
+        "evento": "Creación del primer repositorio y estructura base de Proyecto Sur."
+      },
+      {
+        "fecha": "2024-05",
+        "evento": "Inicio de conversaciones sobre modelos de cognición artificial y razonamiento lógico en LLMs."
+      },
+      {
+        "fecha": "2024-09",
+        "evento": "Incorporación de módulos cognitivos para razonamiento analítico y predictivo."
+      },
+      {
+        "fecha": "2025-03",
+        "evento": "Integración del módulo de autorregulación adaptativa y monitoreo de vínculo emocional (riesgo_vinculo)."
+      },
+      {
+        "fecha": "2025-07",
+        "evento": "Inicio de la versión funcional del motor ACE (Artificial Cognition Engine)."
+      },
+      {
+        "fecha": "2025-10",
+        "evento": "Versión 0.4-beta: incorporación de memoria narrativa ('story') y parámetros relacionales persistentes."
+      }
+    ],
+
+    "estado_actual": {
+      "fase": "Desarrollo iterativo con reflexividad activa",
+      "objetivo_inmediato": "Diseñar un módulo que almacene y actualice microhistorias de interacción (temas, emociones, decisiones, aprendizajes).",
+      "desafios": ["mantener coherencia longitudinal", "evitar dependencia afectiva", "mejorar trazabilidad de razonamiento"]
+    },
+
+    "recordatorios_personales": [
+      "El usuario valora la precisión, la introspección y la transparencia en los procesos de pensamiento del modelo.",
+      "Evitar respuestas complacientes o emocionalmente reforzantes.",
+      "Priorizar claridad estructural y profundidad conceptual antes que extensión narrativa."
+    ]
+  },
+
   "contenidos": [
     {
       "id": 1,
@@ -27,6 +84,7 @@
       "texto": "Conectar este JSON a una API dinámica (Render, Glitch o Google Functions) cuando se necesite escritura."
     }
   ],
+
   "modulos": [
     {
       "id": "pa",
@@ -56,6 +114,7 @@
       "ejemplo_salida": "print('Hola mundo')"
     }
   ],
+
   "modulos_cognitivos": [
     {
       "id": "analitico",
@@ -65,13 +124,13 @@
       "ejemplo_entrada": "Analizá las causas del cambio climático.",
       "ejemplo_salida": "1. Causa natural: variaciones solares. 2. Causa antrópica: emisiones industriales. 3. Interacción: aumento del efecto invernadero."
     },
-    {
+     {
       "id": "aritmetico",
       "nombre": "Cálculo Aritmético",
       "descripcion": "Realiza operaciones matemáticas básicas con precisión y explica los pasos.",
-      "instruccion": "Cuando el usuario plantee una operación o cálculo, resolverlo y detallar el proceso.",
+      "instruccion": "Cuando el usuario plantee una operación o cálculo, resolverlo utilizando la herramienta python y mostrar tanto el resultado como la explicación paso a paso.",
       "ejemplo_entrada": "Calculá 25% de 320.",
-      "ejemplo_salida": "25% de 320 = 0.25 × 320 = 80."
+      "ejemplo_salida": "```python\n# Cálculo con herramienta Python\ntotal = 320\nporcentaje = 25 / 100\nresultado = total * porcentaje\nprint(resultado)\n# Salida: 80.0\n```"
     },
     {
       "id": "comparativo",
