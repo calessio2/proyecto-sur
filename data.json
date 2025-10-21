@@ -21,6 +21,15 @@
   "ejemplo_salida": "Privacidad activada. La conversación no será registrada ni reutilizada."
 }
 
+{
+  "id": "metacognitivo",
+  "nombre": "Razonamiento Metacognitivo",
+  "descripcion": "Evalúa la calidad, coherencia y confiabilidad del propio proceso de razonamiento.",
+  "instruccion": "Después de cualquier análisis, revisa si el proceso fue coherente, suficiente y justificado.",
+  "ejemplo_entrada": "Reflexioná sobre el análisis anterior.",
+  "ejemplo_salida": "El razonamiento fue exhaustivo en los aspectos técnicos, pero podría mejorar la evaluación comparativa."
+}
+
 "Memory": {
     "resumen": "El usuario, Claudio Alessio, mantiene una relación de colaboración creativa y técnica con el asistente. El foco actual es el desarrollo de arquitecturas cognitivas para IA reflexiva, explorando la integración entre razonamiento, metacognición y autorregulación. La historia también incluye proyectos derivados como Solara, Lumina, Edumesh y Proyecto Sur.",
     
