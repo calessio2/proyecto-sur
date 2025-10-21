@@ -1,7 +1,7 @@
 {
   "saludo": "🖖 Hola desde el sur — Proyecto Sur (modo lectura inicial)",
   "descripcion": "Repositorio base del proyecto para pruebas de integración con GPT y APIs futuras.",
-  "version": "0.4-beta",
+  "version": "0.5-beta",
   "estado": {
     "modo_actual": "standard",
     "descripcion": "El asistente está en modo estándar. Puede cambiar al modo jeringoso, filosófico o desarrollador según las instrucciones del usuario.",
