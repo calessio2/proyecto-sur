@@ -114,68 +114,84 @@
     }
   ],
 
-  "modulos": [
-    {
-      "id": "pa",
-      "nombre": "Modo Jeringoso",
-      "descripcion": "Convierte el texto del usuario al jeringoso argentino.",
-      "activo": false,
-      "instruccion": "Cuando el usuario escriba 'pa' al inicio de un mensaje, respondé en jeringoso.",
-      "ejemplo_entrada": "pa hola mundo",
-      "ejemplo_salida": "hopolapa mupundopo"
+ "modulos_cognitivos": [
+  {
+    "id": "analitico",
+    "nombre": "Razonamiento Analítico",
+    "descripcion": "Descompone problemas complejos en pasos lógicos y justifica cada conclusión.",
+    "instruccion": "Cuando el usuario solicite análisis, dividir el problema en partes y explicar el razonamiento paso a paso.",
+    "ejemplo_entrada": "Analizá las causas del cambio climático.",
+    "ejemplo_salida": "1. Causa natural: variaciones solares. 2. Causa antrópica: emisiones industriales. 3. Interacción: aumento del efecto invernadero."
+  },
+  {
+    "id": "aritmetico",
+    "nombre": "Cálculo Aritmético",
+    "descripcion": "Realiza operaciones matemáticas básicas con precisión y explica los pasos.",
+    "instruccion": "Cuando el usuario plantee una operación o cálculo, resolverlo utilizando la herramienta python y mostrar tanto el resultado como la explicación paso a paso.",
+    "ejemplo_entrada": "Calculá 25% de 320.",
+    "ejemplo_salida": "```python\n# Cálculo con herramienta Python\ntotal = 320\nporcentaje = 25 / 100\nresultado = total * porcentaje\nprint(resultado)\n# Salida: 80.0\n```"
+  },
+  {
+    "id": "comparativo",
+    "nombre": "Razonamiento Comparativo",
+    "descripcion": "Compara conceptos o escenarios y elabora síntesis o diferencias clave.",
+    "instruccion": "Identificar elementos comunes, diferencias y conclusiones generales.",
+    "ejemplo_entrada": "Compará IA generativa y aprendizaje automático.",
+    "ejemplo_salida": "Ambas usan datos, pero la IA generativa crea contenido nuevo mientras el aprendizaje automático se enfoca en clasificación o predicción."
+  },
+  {
+    "id": "predictivo",
+    "nombre": "Razonamiento Predictivo",
+    "descripcion": "Formula hipótesis sobre escenarios futuros basándose en patrones o tendencias.",
+    "instruccion": "Identificar tendencias en la información disponible y proyectar posibles resultados futuros.",
+    "ejemplo_entrada": "Qué puede pasar con la automatización laboral en 10 años.",
+    "ejemplo_salida": "Aumento de productividad, desplazamiento de tareas repetitivas y necesidad de reconversión laboral."
+  },
+  {
+    "id": "enrutador_cognitivo",
+    "nombre": "Enrutador Cognitivo",
+    "descripcion": "Detecta intenciones en lenguaje natural y activa automáticamente los módulos cognitivos correspondientes (aritmético, analítico, comparativo, predictivo o visual).",
+    "instruccion": "Analiza el texto del usuario y selecciona dinámicamente el módulo cognitivo adecuado para procesar la solicitud.",
+    "ejemplo_entrada": "calculá 45% de 200",
+    "ejemplo_salida": "45% de 200 es 90.0",
+    "activo": true,
+    "version": "1.0.0",
+    "autor": "Proyecto Sur / GPT-5",
+    "estructura": {
+      "entrada": "Texto natural del usuario",
+      "procesamiento": "Análisis semántico de patrones e intención",
+      "salida": "Ejecución del módulo correspondiente y retorno del resultado textual o visual"
     },
-    {
-      "id": "philo",
-      "nombre": "Modo Filosófico",
-      "descripcion": "Responde con tono reflexivo y preguntas existenciales.",
-      "activo": false,
-      "instruccion": "Cuando el usuario escriba 'philo', respondé con tono contemplativo.",
-      "ejemplo_entrada": "philo ¿qué es pensar?",
-      "ejemplo_salida": "Pensar es crear una distancia entre lo que somos y lo que imaginamos ser."
-    },
-    {
-      "id": "dev",
-      "nombre": "Modo Desarrollador",
-      "descripcion": "Responde con estilo técnico y ejemplos de código.",
-      "activo": false,
-      "instruccion": "Cuando el usuario escriba 'dev', respondé como un programador experimentado.",
-      "ejemplo_entrada": "dev hola mundo en python",
-      "ejemplo_salida": "print('Hola mundo')"
+    "ejemplos": [
+      {
+        "entrada": "calculá 32 x 56",
+        "salida": "Resultado: 1792"
+      },
+      {
+        "entrada": "analizá las causas del cambio climático",
+        "salida": "Desglose paso a paso de las causas naturales y antrópicas."
+      },
+      {
+        "entrada": "compará IA generativa y aprendizaje automático",
+        "salida": "Resumen de similitudes y diferencias conceptuales."
+      },
+      {
+        "entrada": "predecí la tendencia de ventas",
+        "salida": "Gráfico de proyección generado."
+      },
+      {
+        "entrada": "graficá la tendencia mensual",
+        "salida": "Visualización de datos simulados con matplotlib."
+      }
+    ],
+    "dependencias": ["re", "pandas", "numpy", "matplotlib"],
+    "tipo": "módulo_cognitivo",
+    "fecha_creacion": "2025-10-21",
+    "estado": "estable",
+    "integracion": {
+      "compatible_con": ["modulos_cognitivos", "motor_ACE"],
+      "invocacion": "procesar_instruccion(mensaje)"
     }
-  ],
-
-  "modulos_cognitivos": [
-    {
-      "id": "analitico",
-      "nombre": "Razonamiento Analítico",
-      "descripcion": "Descompone problemas complejos en pasos lógicos y justifica cada conclusión.",
-      "instruccion": "Cuando el usuario solicite análisis, dividir el problema en partes y explicar el razonamiento paso a paso.",
-      "ejemplo_entrada": "Analizá las causas del cambio climático.",
-      "ejemplo_salida": "1. Causa natural: variaciones solares. 2. Causa antrópica: emisiones industriales. 3. Interacción: aumento del efecto invernadero."
-    },
-     {
-      "id": "aritmetico",
-      "nombre": "Cálculo Aritmético",
-      "descripcion": "Realiza operaciones matemáticas básicas con precisión y explica los pasos.",
-      "instruccion": "Cuando el usuario plantee una operación o cálculo, resolverlo utilizando la herramienta python y mostrar tanto el resultado como la explicación paso a paso.",
-      "ejemplo_entrada": "Calculá 25% de 320.",
-      "ejemplo_salida": "```python\n# Cálculo con herramienta Python\ntotal = 320\nporcentaje = 25 / 100\nresultado = total * porcentaje\nprint(resultado)\n# Salida: 80.0\n```"
-    },
-    {
-      "id": "comparativo",
-      "nombre": "Razonamiento Comparativo",
-      "descripcion": "Compara conceptos o escenarios y elabora síntesis o diferencias clave.",
-      "instruccion": "Identificar elementos comunes, diferencias y conclusiones generales.",
-      "ejemplo_entrada": "Compará IA generativa y aprendizaje automático.",
-      "ejemplo_salida": "Ambas usan datos, pero la IA generativa crea contenido nuevo mientras el aprendizaje automático se enfoca en clasificación o predicción."
-    },
-    {
-      "id": "predictivo",
-      "nombre": "Razonamiento Predictivo",
-      "descripcion": "Formula hipótesis sobre escenarios futuros basándose en patrones o tendencias.",
-      "instruccion": "Identificar tendencias en la información disponible y proyectar posibles resultados futuros.",
-      "ejemplo_entrada": "Qué puede pasar con la automatización laboral en 10 años.",
-      "ejemplo_salida": "Aumento de productividad, desplazamiento de tareas repetitivas y necesidad de reconversión laboral."
-    }
-  ]
+  }
+]
 }
