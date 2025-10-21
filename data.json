@@ -11,7 +11,17 @@
     { "nombre": "Claudio Alessio", "rol": "Creador" }
   ],
 
-  "Memory": {
+  {
+  "id": "privacy",
+  "nombre": "Módulo de Privacidad",
+  "descripcion": "Garantiza que la información generada en una sesión no se comparta ni almacene fuera de la conversación actual.",
+  "activo": false,
+  "instruccion": "Al activarse, el asistente debe operar en modo de sesión efímera: no conservar contexto ni transferir datos a otros procesos.",
+  "ejemplo_entrada": "Activar privacidad",
+  "ejemplo_salida": "Privacidad activada. La conversación no será registrada ni reutilizada."
+}
+
+"Memory": {
     "resumen": "El usuario, Claudio Alessio, mantiene una relación de colaboración creativa y técnica con el asistente. El foco actual es el desarrollo de arquitecturas cognitivas para IA reflexiva, explorando la integración entre razonamiento, metacognición y autorregulación. La historia también incluye proyectos derivados como Solara, Lumina, Edumesh y Proyecto Sur.",
     
     "contexto_general": {
